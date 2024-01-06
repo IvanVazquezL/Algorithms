@@ -1,3 +1,7 @@
+package QuickFindUF;
+
+import QuickFindUF.QuickFindUF;
+
 public class Main {
     public static void main(String[] args) {
         QuickFindUF qf = new QuickFindUF(10);

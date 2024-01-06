@@ -1,3 +1,5 @@
+package QuickFindUF;
+
 import java.util.Arrays;
 
 public class QuickFindUF {
