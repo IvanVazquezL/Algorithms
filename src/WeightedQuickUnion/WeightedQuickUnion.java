@@ -21,7 +21,11 @@ public class WeightedQuickUnion {
         printArrays();
     }
     private int root(int i) {
-        while (i != id[i]) i = id[i];
+        while (i != id[i]) {
+            id[i] = id[id[i]];
+            i = id[i];
+
+        }
         return i;
     }
 
