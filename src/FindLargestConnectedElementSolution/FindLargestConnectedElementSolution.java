@@ -1,3 +1,5 @@
+package FindLargestConnectedElementSolution;
+
 public class FindLargestConnectedElementSolution {
     private int[] id;       // parent link (an array where id[i] is the parent of i)
     private int[] size;     // size of the connected component rooted at i

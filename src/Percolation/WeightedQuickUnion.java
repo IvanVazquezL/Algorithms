@@ -1,4 +1,4 @@
-package WeightedQuickUnion;
+package Percolation;
 
 import java.util.Arrays;
 

@@ -14,5 +14,10 @@ public class Main {
         qu.union(6,1);
         qu.union(7,3);
 
+        WeightedQuickUnion qu2 = new WeightedQuickUnion(9);
+        qu.union(0,3);
+        qu.union(3,6);
+        qu.connected(0,6);
+
     }
 }
