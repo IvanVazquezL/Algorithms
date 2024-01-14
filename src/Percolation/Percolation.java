@@ -28,9 +28,10 @@ public class Percolation {
     public void open(int row, int col) {
         if (isOpen(row, col) || isFull(row, col)) return;
         grid[row][col] = 1;
-        countOpenSites++;
-
-
+        if (row - 1 == 0) grid[row][col] = 2;
+        if (isFull(row - 1, col)) grid[row][col] = 2;
+        if (isFull(row, col - 1)) grid[row][col] = 2;
+        if (isFull(row + 1, col)) grid[row][col] = 2;
         printGrid();
     }
 
